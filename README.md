@@ -4,7 +4,7 @@ This project implements a full localization and navigation system on a self-buil
 
 > Embedded systems project using MATLAB + BLE control  
 > Robot built by modifying a toy car and integrating custom electronics  
-> [View Full Hardware and Software Report](./index.html)
+> [View Full Hardware and Software Report](https://ivannnhuang.github.io/)
 
 ---
 
