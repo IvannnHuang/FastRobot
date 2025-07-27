@@ -13,25 +13,11 @@ This project implements a full localization and navigation system on a self-buil
 The robot was constructed by retrofitting a toy car chassis with:
 
 - **Artemis microcontroller** (RedBoard Artemis Nano)  
-  - Sends PWM signals to control motor speed and direction  
-  - Handles onboard Kalman filtering and sensor polling
-
 - **Two motor drivers**  
-  - Independently control the left and right wheels  
-  - Enable smooth turning and straight motion via PID
-
 - **VL53L0X Time-of-Flight (ToF) sensor**  
-  - Mounted on a servo for rotational scanning  
-  - Provides accurate distance readings used for both mapping and position control
-
 - **MPU6050 IMU sensor**  
-  - Supplies rotational velocity and orientation data  
-  - Used in PID turning and stability control
-
-- **Bluetooth Low Energy (BLE)** communication  
-  - Allows for wireless control and data streaming between robot and Jupyter Lab
-
-The hardware was mounted on a custom laser-cut acrylic platform with power regulation and wiring secured for real-world testing:contentReference[oaicite:0]{index=0}.
+- **Bluetooth Low Energy (BLE)**
+<img src="assets/img/portfolio/car_latyout.JPG" alt="Final Robot" width="400"/>
 
 ---
 
@@ -41,7 +27,9 @@ To increase precision in movement and mapping, the ToF sensor’s noisy output w
 
 - Distance measurement stability
 - Control accuracy during forward motion
-- Localization confidence by providing clean scan data:contentReference[oaicite:1]{index=1}
+- Localization confidence by providing clean scan data:
+
+<img src="assets/img/portfolio/kf_inter_mea.png" alt="Final Robot" width="400"/>
 
 ---
 
@@ -53,7 +41,8 @@ A full **localization pipeline** was implemented:
 2. This scan is transmitted via BLE to MATLAB.
 3. A **Bayes filter** is applied in MATLAB using a known environment map.
 4. The result is a probabilistic estimate of the robot’s pose `(x, y, θ)`.
-5. This pose is used to guide the next navigation step, correcting for drift:contentReference[oaicite:2]{index=2}.
+5. This pose is used to guide the next navigation step, correcting for drift:
+<img src="assets/img/portfolio/map_global_wall.png" alt="Final Robot" width="400"/>
 
 ---
 
