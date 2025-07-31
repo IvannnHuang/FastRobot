@@ -1,6 +1,6 @@
 # Path Planning and Execution – Embedded System with Real-World Localization
 
-This project implements a full localization and navigation system on a self-built autonomous robot, developed for a course in embedded systems. The robot was programmed in **MATLAB**, integrated with onboard C code, and deployed on hardware that was **modified from a toy RC car**. The final system successfully navigates between waypoints, maps its surroundings, and localizes itself using **Bayes filtering**, **Kalman-filtered sensor data**, and **PID control**.
+This project implements a full localization and navigation system on a self-built autonomous robot, developed for a course in embedded systems. The robot was programmed in **python**, integrated with onboard C++ code, and deployed on hardware that was **modified from a toy RC car**. The final system successfully navigates between waypoints, maps its surroundings, and localizes itself using **Bayes filtering**, **Kalman-filtered sensor data**, and **PID control**.
 
 > Embedded systems project using MATLAB + BLE control  
 > Robot built by modifying a toy car and integrating custom electronics  
